@@ -138,7 +138,8 @@ nav.navbar.bootsnav {
 /*.navbar-brand*/
 .navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus{
     display: inline-block;
-    color: #120fdf;
+    /*color: #120fdf;*/
+	color: white;
     font-size: 24px;
     letter-spacing: 3px;
     font-family: 'Rufina', serif;
@@ -214,6 +215,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 .welcome-hero {
     height: 100vh;
     position: relative;
+<<<<<<< HEAD
     background:url(../images/oqcs/background.jpg)no-repeat;
     background-position: center 50%;
     /* background-size: cover; */
@@ -221,6 +223,11 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
     /* display: flex; */
     /* align-items: center; */
     justify-content: center;
+=======
+    background: url("/assets/images/oqcs/background.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+>>>>>>> 40cebdb3b8ef200f53005a79362fcf7c71a216d6
     z-index: 1;
 }
 .welcome-hero:before {
