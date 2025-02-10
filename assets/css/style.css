@@ -130,7 +130,7 @@ html,body{height: 100%;}
         2. Top-area
 --------------------------------------*/
 nav.navbar.bootsnav {
-    background-color: transparent;
+    background-color: rgba(42,45,84,.60);;
     border-bottom: transparent;
 }
 .wrap-sticky nav.navbar.bootsnav.sticked {background-color: #000;box-shadow: 0 2px 5px rgba(0,0,0,.2);}
@@ -146,9 +146,16 @@ nav.navbar.bootsnav {
     padding: 45px 0px;
     /* text-transform:uppercase; */
 }
+
+a.navbar-brand{
+    width: 80px;
+}
 .navbar-header a.navbar-brand span{display: inline-block;color:#4e4ffa;text-transform:capitalize;}
 
-.wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand,.wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand:hover,.wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand:focus {padding:30px 0px;}
+/* .wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand,.wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand:hover,.wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand:focus {
+    padding:30px 0px;
+} */
+
 /*.navbar-brand*/
 
 /*.nav li*/
@@ -207,9 +214,13 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 .welcome-hero {
     height: 100vh;
     position: relative;
-    background:url(../images/oqcs/background.png)no-repeat;
-    background-position: center;
-    background-size: cover;
+    background:url(../images/oqcs/background.jpg)no-repeat;
+    background-position: center 50%;
+    /* background-size: cover; */
+    background-size: contain; 
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: center;
     z-index: 1;
 }
 .welcome-hero:before {
@@ -219,27 +230,27 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(42,45,84,.60);
+    /* background: rgba(42,45,84,.60); */
 }
 .header-area{position: absolute;top:0;left:0;width: 100%;z-index: 99;}
 
 /*.welcome-hero-txt*/
 .welcome-hero-txt{text-align: center;padding:290px 0 372px;}
-.welcome-hero-txt h2 {
-    font-size: 42px;
-    color: #fff;
+.welcome-hero-txt p {
+    font-size: 24px;
+    color: #000000;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 45px;
+    margin-top: 200px;
 }
-.welcome-hero-txt p {
+/* .welcome-hero-txt p {
     font-size: 18px;
     text-transform: initial;
     color: #fff;
     font-weight: 500;
     max-width: 735px;
     margin: 0 auto;
-}
+} */
 
 /*.welcome-hero-txt*/
 
@@ -262,6 +273,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
     text-align: center;
     margin-top: 20px;
     margin-bottom: 5px;
+}
+
+.about-bold{
+    font-weight: bold;
 }
 
 .photo-container{
